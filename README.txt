@@ -1,1 +1,1 @@
-Vous retrouverez quelques bouts de codes, ainsi que quelques images
+Vous retrouverez ici quelques morceaux de codes, ainsi que quelques images
