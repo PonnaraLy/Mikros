@@ -1,0 +1,7 @@
+Pour tester le script sur Maya :
+1)Mettre le script entoform.py (qui est dans le dossier entoform) dans le Script Editor
+2)Dans le même script, dans le sys.path.append, écrire le chemin où le situe le dossier "modules"
+3)Dans videoDetection.py (modules/videoDetection.py) et entoCreation.py (modules/entoCreation.py), dans entoPath, cherchez le chemin du
+dossier "entoform"
+
+PS : Ne marche que sur Maya 2016
