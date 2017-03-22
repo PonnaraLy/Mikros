@@ -51,19 +51,14 @@ void detectAndDisplay(Mat frame)
 	//-- Detect faces
 	face_cascade.detectMultiScale(frame_gray, faces, 1.1, 2, 0 | CASCADE_SCALE_IMAGE, Size(250, 250));
 
-	//if (faces.size()!= 0) std::cout << "Whee" << std::endl;
-	//else std::cout << "Huh" << std::endl;
 	
 	for (size_t i = 0; i < faces.size(); i++)
 	{
 		Point center(faces[i].x + faces[i].width / 2, faces[i].y + faces[i].height / 2);
 
-		//Rectangle
 		Rect faceRect = Rect(faces[i].x, faces[i].y, faces[i].width, faces[i].height);
 		rectangle(frame, faceRect, CV_RGB(255, 0, 0), 5, 8, 0);
 
-		//Cercle
-		//ellipse(frame, center, Size(faces[i].width / 2, faces[i].height / 2), 0, 0, 360, Scalar(255, 0, 255), 4, 8, 0);
 		Mat faceROI = frame_gray(faces[i]);
 		std::vector<Rect> eyes;
 
