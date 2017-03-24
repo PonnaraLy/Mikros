@@ -1,0 +1,2 @@
+LineRendererScript est un script basé sur le jeu Bouncer. Cela permet de créer les vagues quand le personnage saute
+CreatureBehaviour et CreatureManager sont utilisés dans Microcolor pour la gestion des créatures
